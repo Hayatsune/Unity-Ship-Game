@@ -14,8 +14,8 @@ public class moveShip : MonoBehaviour {
 		leftBottomCameraBorder = Camera.main.ViewportToWorldPoint (new Vector3 (0, 0, 0));
 		rightBottomCameraBorder = Camera.main.ViewportToWorldPoint (new Vector3 (1, 0, 0));
 		rightTopCameraBorder = Camera.main.ViewportToWorldPoint (new Vector3 (1, 1, 0));
-		positionShip = leftBottomCameraBorder.x + gameObject.GetComponent<SpriteRenderer> ().bounds.size.x/2;
-		transform.position = new Vector3 (positionShip, transform.position.y, transform.position.z);
+		positionShip = leftBottomCameraBorder.y + gameObject.GetComponent<SpriteRenderer> ().bounds.size.y/2;
+		transform.position = new Vector3 (transform.position.x, positionShip, transform.position.z);
 	}
 	
 	// Update is called once per frame

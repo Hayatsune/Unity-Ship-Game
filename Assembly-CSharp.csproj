@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{3B8BF14C-1C3B-AFED-35BA-0EFF099C3D20}</ProjectGuid>
+	<ProjectGuid>{B20B304D-89BF-6816-FB2D-39FA6BE89BFA}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,8 +45,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\moveAsteroid.cs" />
      <Compile Include="Assets\Scripts\moveShip.cs" />
-     <Compile Include="Assets\Scripts\posShip.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programmes/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
