@@ -39,4 +39,22 @@ public class moveAsteroid : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
+
+	void OnTriggerEnter2D(Collider2D collider) {
+		//SI un astéroid touche le joueur, le joueur perd une vie
+		if (collider.tag == "Player")
+		{
+			if(GameObject.FindGameObjectWithTag("life5"))
+				GameObject.FindGameObjectWithTag("life5").AddComponent<fadeOut>();	
+			else if(GameObject.FindGameObjectWithTag("life4"))
+				GameObject.FindGameObjectWithTag("life4").AddComponent<fadeOut>();
+			else if(GameObject.FindGameObjectWithTag("life3"))
+				GameObject.FindGameObjectWithTag("life3").AddComponent<fadeOut>();
+			else if(GameObject.FindGameObjectWithTag("life2"))
+				GameObject.FindGameObjectWithTag("life2").AddComponent<fadeOut>();
+			else if(GameObject.FindGameObjectWithTag("life1")){
+				GameObject.FindGameObjectWithTag("life1").AddComponent<fadeOut>();
+				Destroy(GameObject.FindGameObjectWithTag("Player"));
+			}
+	}
 }
