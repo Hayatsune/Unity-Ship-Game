@@ -45,8 +45,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\fadeOut.cs" />
      <Compile Include="Assets\Scripts\moveAsteroid.cs" />
      <Compile Include="Assets\Scripts\moveShip.cs" />
+     <Compile Include="Assets\Scripts\moveShoot.cs" />
+     <Compile Include="Assets\Scripts\shootAgain.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programmes/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

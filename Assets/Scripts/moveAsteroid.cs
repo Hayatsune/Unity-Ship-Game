@@ -56,5 +56,6 @@ public class moveAsteroid : MonoBehaviour {
 				GameObject.FindGameObjectWithTag("life1").AddComponent<fadeOut>();
 				Destroy(GameObject.FindGameObjectWithTag("Player"));
 			}
+		}
 	}
 }
